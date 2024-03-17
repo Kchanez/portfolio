@@ -149,46 +149,48 @@
     </div>
 
     <script>
+        // Fonction pour basculer le menu
         function toggleMenu() {
             var navigation = document.querySelector('.navigation');
             navigation.classList.toggle('nav');
         }
-    </script>
-     <script>
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('./sw.js')
-            .then((registration) => {
-              console.log('Service Worker enregistré avec succès:', registration);
-            })
-            .catch((error) => {
-              console.error('Erreur d\'enregistrement du Service Worker:', error);
-            });
-        }
-      </script>
-      <script>
+
+        // Gestionnaire d'événement pour l'installation de l'application
         window.addEventListener('beforeinstallprompt', (event) => {
-        // Empêche Chrome de lancer automatiquement la bannière d'installation
-        event.preventDefault();
-        // Affichez un bouton ou une bannière pour inviter l'utilisateur à installer l'application
-        // Vous pouvez personnaliser ce message en fonction de vos besoins
-        const installButton = document.createElement('button');
-        installButton.textContent = 'Installer l\'application';
-        installButton.addEventListener('click', () => {
-            // Affichez la bannière d'installation
-            event.prompt();
-            // Attend la réponse de l'utilisateur pour installer ou non l'application
-            event.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-                console.log('L\'utilisateur a installé l\'application');
-            } else {
-                console.log('L\'utilisateur a refusé l\'installation de l\'application');
-            }
+            event.preventDefault();
+            const installButton = document.createElement('button');
+            installButton.textContent = 'Installer l\'application';
+            installButton.addEventListener('click', () => {
+                event.prompt();
+                event.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('L\'utilisateur a installé l\'application');
+                    } else {
+                        console.log('L\'utilisateur a refusé l\'installation de l\'application');
+                    }
+                });
             });
-        });
-        // Ajoutez le bouton d'installation à votre page HTML
-        document.body.appendChild(installButton);
+            document.body.appendChild(installButton);
         });
 
-      </script>
+        // Gestionnaire d'événement pour le lancement de l'application installée
+        const launch_handler = {
+            handleEvent: async () => {
+                console.log('L\'application a été lancée !');
+            }
+        };
+        window.addEventListener('appinstalled', launch_handler);
+
+        // Enregistrement du service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then((registration) => {
+                    console.log('Service Worker enregistré avec succès:', registration);
+                })
+                .catch((error) => {
+                    console.error('Erreur d\'enregistrement du Service Worker:', error);
+                });
+        }
+    </script>
 </body>
 </html>
