@@ -4,8 +4,8 @@
     "description": "Découvrez le portfolio d'un développeur web passionné, présentant ses compétences, projets et réalisations dans le développement web. Explorez son expertise en conception et en codage pour créer des sites web performants et innovants",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "background_color": "#f1f1f1",
+    "theme_color": "#44b6c6",
     "prefer_related_applications": false,
     "scope": "./",
     "orientation": "portrait",
@@ -32,6 +32,11 @@
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "maskable"
+      },
+      {
+        "src": "./ImagesHeaders/apple-icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
       }
       
     ]
