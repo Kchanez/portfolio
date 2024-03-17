@@ -75,7 +75,7 @@ const urlsToCache = [
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
+      return cache.add('index.html');
     })
   );
 });
@@ -87,3 +87,15 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+
+
+
+
+
+
+
+
+
+
+
