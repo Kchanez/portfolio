@@ -344,5 +344,30 @@
             });
         }
       </script>
+      <script>
+        window.addEventListener('beforeinstallprompt', (event) => {
+        // Empêche Chrome de lancer automatiquement la bannière d'installation
+        event.preventDefault();
+        // Affichez un bouton ou une bannière pour inviter l'utilisateur à installer l'application
+        // Vous pouvez personnaliser ce message en fonction de vos besoins
+        const installButton = document.createElement('button');
+        installButton.textContent = 'Installer l\'application';
+        installButton.addEventListener('click', () => {
+            // Affichez la bannière d'installation
+            event.prompt();
+            // Attend la réponse de l'utilisateur pour installer ou non l'application
+            event.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('L\'utilisateur a installé l\'application');
+            } else {
+                console.log('L\'utilisateur a refusé l\'installation de l\'application');
+            }
+            });
+        });
+        // Ajoutez le bouton d'installation à votre page HTML
+        document.body.appendChild(installButton);
+        });
+
+      </script>
 </body>
 </html>
