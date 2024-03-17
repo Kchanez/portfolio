@@ -2,13 +2,14 @@
     "name": "KANOUN Chanez",
     "short_name": "Portfolio",
     "description": "Découvrez le portfolio d'un développeur web passionné, présentant ses compétences, projets et réalisations dans le développement web. Explorez son expertise en conception et en codage pour créer des sites web performants et innovants",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "prefer_related_applications": false,
     "scope": "./",
     "orientation": "portrait",
+    "lang": "fr-FR",
     "icons": [
       
       {
@@ -25,6 +26,12 @@
         "sizes": "512x512",
         "src": "/ImagesHeaders/android-chrome-512x512.png",
         "type": "image/png"
+      },
+      {
+        "src": "./ImagesHeaders/go-3-logo-png-transparent.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
       }
       
     ]

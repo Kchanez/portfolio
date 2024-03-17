@@ -67,8 +67,6 @@ const urlsToCache = [
      './ImagesBody/sight-sense-plants-collage-min.jpg',
      './ImagesBody/smelling-sense-lemons-collage-min.jpg',
      './ImagesBody/touch-sense-heart-collage-min.jpg',
-
-
      // Ajoutez d'autres ressources à mettre en cache
 ];
 
@@ -95,9 +93,6 @@ self.addEventListener('push', function(event) {
       icon: data.icon
   });
 });
-
-
-
 
 
 
