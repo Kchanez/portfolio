@@ -33,6 +33,8 @@
         <meta name="twitter:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
         <meta name="icon" href="./ImagesHeaders/go-3-logo-png-transparent.png" type="images/x-icon">
         <link rel="stylesheet" href="./Style.css">
+        <link rel="stylesheet" href="./MonCV.css">
+        <link rel="stylesheet" href="./MonCVMobile.css">
         <link rel="stylesheet" href="./StyleMobile.css">
         <link rel="manifest" href="./manifest.json">
         <link rel="manifest" href="./ImagesHeaders/site.webmanifest">
@@ -346,16 +348,11 @@
       </script>
       <script>
         window.addEventListener('beforeinstallprompt', (event) => {
-        // Empêche Chrome de lancer automatiquement la bannière d'installation
         event.preventDefault();
-        // Affichez un bouton ou une bannière pour inviter l'utilisateur à installer l'application
-        // Vous pouvez personnaliser ce message en fonction de vos besoins
         const installButton = document.createElement('button');
         installButton.textContent = 'Installer l\'application';
         installButton.addEventListener('click', () => {
-            // Affichez la bannière d'installation
             event.prompt();
-            // Attend la réponse de l'utilisateur pour installer ou non l'application
             event.userChoice.then((choiceResult) => {
             if (choiceResult.outcome === 'accepted') {
                 console.log('L\'utilisateur a installé l\'application');
@@ -364,7 +361,6 @@
             }
             });
         });
-        // Ajoutez le bouton d'installation à votre page HTML
         document.body.appendChild(installButton);
         });
 
