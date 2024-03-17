@@ -1,0 +1,94 @@
+@media only screen and (max-width: 768px) 
+{
+
+    .container > .CV 
+    {
+        width: 100%;
+        margin: 0 auto;
+        box-shadow:none ;
+    }
+    .container > .contactUs .p8M , .p9M
+    {
+        font-size: 2em;
+    }
+    .container > .contactUs .p9M 
+    {
+        font-size: 1em;
+    }
+    .container > .CV .gauche
+    {
+        width: 40%;
+        padding: 12px;
+    }
+    .container > .CV .droit
+    {
+        width: 60%;
+    }
+    .container > .CV .gauche .imgCv 
+    {
+        height: 8%;
+    }
+
+    .container > .CV .gauche .imgCv img
+    {
+        width: 70%;
+        border-radius: 50%;
+      
+    }
+    
+    .container > .CV .gauche .perso .perso1 .profil .pM , .bloc .info .pM
+    {
+        margin-left: 3px;
+        font-size: 0.5em;
+    }
+    .container > .CV .gauche .perso .perso1 .titre .pInfoM 
+    {
+        width: 100%;
+        font-size: 1em;
+    }
+    .container > .CV .gauche .perso .perso1 .titre .marg 
+    {
+        margin-top: 0px;
+    }
+    .container > .CV .gauche .perso .perso1 .profil .ul 
+    {
+        padding-left: 15px;
+    }
+    .container > .CV .gauche .perso .perso1 .blocM
+    {
+        justify-content: flex-start;
+    }
+    .container > .CV .gauche .perso .perso1 .profil .p 
+    {
+        font-size: 0.6em;
+        margin-top: 0px;
+    }
+    .container > .CV .gauche .perso .perso1 .profil .hrM
+    {
+        width: 100%;
+    }
+    .container > .CV .gauche .perso .perso1 .profil .hrM
+    {
+        left: 55%;
+        width: 0%;
+    }
+    .container > .CV .gauche .persoM
+    {
+        width: 100%;
+    } 
+
+    .container > .CV .gauche .perso .perso1 .centreM
+    {
+        flex-direction: column;
+        line-height: 2;
+    }
+
+    .container > .CV .droit .nom .pMobile 
+    {
+        font-size: 2em;
+    }
+    .container > .CV .gauche .perso .perso1 .profilM 
+    {
+        font-size: 0.6em;
+    }
+}

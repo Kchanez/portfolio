@@ -1,0 +1,169 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) 
+{
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        width: 95%;
+    }
+    /* logo */
+    .container >  .header  a img
+    {
+        width: 30%;
+    }
+
+    /* Menu  */
+
+    .container > header #link {
+        flex-basis: 50%;
+    }
+    .container > header #link .burger {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #393838;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+
+    .container > header .nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        box-shadow: 0 16px 16px 0 #dedfde, 0px 8px 8px 0 #dedfde;
+    }
+
+    .container > header .open .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > header .open .menu li {
+        display: flex;
+        padding: 5px 5px;
+        border-bottom: 0.01em solid #908f8f;
+        width: 100%;
+    }
+
+    .container > header .open .menu li a {
+        text-decoration: none;
+        color: #1b1a1a;
+        font-size: 18px;
+    }
+    .container > header .navigation
+    {
+        display: none;
+    }
+    .container > header .nav {
+        flex-basis: 100%;
+        position: absolute;
+        top: 75px;
+        right: 25px;
+        z-index: 1;
+    }
+
+    
+    /* Body */
+    .container >  .body
+    {
+        flex-direction: column;
+    }
+    .container > .body .Bg img
+    {
+        display: none;
+    }
+    .container > .Services .ProductsM
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+    .container > .Services .Bg .cardM
+    {
+        margin-bottom: 20px;
+    }
+    .container > .Services .Bg .card .link .imgM
+    {
+        display: flex;
+    } 
+    .container > .body .left 
+    {
+        margin: 20px auto;
+    }
+    .container > .body .left .p1 
+    {
+        font-size: 4em;
+        line-height: 1.2;
+    }
+    .container > .space
+    {
+        display: none;
+        height: 0px;
+    }
+    .container > .aboutUs 
+    {
+        margin-top: 0px;
+    }
+    .container > .body .left .p4
+    {
+        font-size: 2em;
+        line-height: 1.5;
+    }
+
+    .container > .body .left .btn 
+    {
+        width: 100%;
+    }
+    .container > .Services 
+    {
+        align-items: flex-start;
+    }
+    .container > .Services .p
+    {
+        margin-bottom: 0px;
+    }
+    .container > .Services .p5
+    {
+        line-height: 2.3;
+    }
+    .container > .footer .local .reseau 
+    {
+        width: 60%;
+    }
+
+    /* footer */
+    .container > .footer 
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0px;
+    }
+    .container > .footer .local .p6 
+    {
+        font-size: 1.3em;
+        color: #60e3a9;
+    }
+    .container > .footer .local .p7
+    {
+        font-size: 1em;
+    }
+    .container > .footer .local .reseau .circle img 
+    {
+        width: 50%;
+    }
+
+    .container >  .SousFooter 
+    {
+        font-size: 0.8em;
+    }
+}

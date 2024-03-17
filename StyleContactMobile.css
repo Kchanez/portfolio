@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px) 
+{
+    .container > .contactUs .p8 
+    {
+        font-size: 3em;
+    }
+    .container > .contact .left .p1
+    {
+        font-size: 2em;   
+    }
+    .container > .contact .left .form .infoPerso
+    {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .container > .contact .left .form .sujet  
+    {
+        width: 90%;
+    }
+    .container > .contact .left .form .sujet .soumettre 
+    {
+        width: 98%;
+    }
+
+}

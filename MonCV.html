@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Métadonnées Basiques-->
+    <meta name="author" content="kanoun chanez">
+    <link rel="icon" href="https://celebrated-pony-6bc4d9.netlify.app/" type="image/x-icon">
+    <meta name="description" content="Portfolio personnel site web" />
+    <meta name="keywords" content="projet, portfolio, developpement web, back end , front end, web, site personnel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://www.facebook.com/chanez.youn">
+    <meta property="og:type" content="website, Portfolio">
+    <meta property="og:title" content="Acceuil">
+    <meta property="og:description" content="Page d'acceuil de mon portflio">
+    <meta property="og:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@votresite">
+    <meta name="twitter:creator" content="@votreutilisateur">
+    <meta name="twitter:url" content="https://celebrated-pony-6bc4d9.netlify.app/">
+    <meta name="twitter:title" content="acceuil">
+    <meta name="twitter:description" content="Page d'acceuil de mon portflio">
+    <meta name="twitter:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="icon" href="./ImagesHeaders/go-3-logo-png-transparent.png" type="images/x-icon">
+
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./StyleMobile.css">
+    <link rel="stylesheet" href="./StyleContact.css">
+    <link rel="stylesheet" href="./MonCV.css">
+    <link rel="stylesheet" href="./MonCVMobile.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Mon CV</title>
+</head>
+<body>
+    <div class="container row" aria-expanded="true">
+        <!-- Header -->
+        <header class="col-12 header">
+            <!-- Logo -->
+            <a href="./index.html" class="col-1" aria-label="aller à la page d'acceuil index">
+                <img src="./ImagesHeaders/go-3-logo-png-transparent.png" alt="logo" aria-label="Logo de Eisine">
+            </a>
+            <!-- Nav Barre -->
+            <a onclick="toggleMenu()" id="link">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </a>
+            <div class="nav col-10 open navigation" id="burger">
+                <ul class="menu">
+                    <li><a href="./index.html" aria-label="page index">Accueil</a></li>
+                    <li><a href="./Galerie.html" aria-label="page Galerie">Ma Galerie</a></li>
+                    <li><a href="./MonCV.html" aria-label="page MonCV">Mon CV</a></li>
+                    <li><a href="./Contact.html" aria-label="page Contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="col-12" style="height: 50px;"></div>
+
+        <main class="col-12 contactUs">
+            <p class="col-12 p8 p8M">CURRICULUM VITAE</p>
+            <p class="col-12 p9 p9M">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, aperiam enim reiciendis dolorum ipsam ratione magnam harum quae, officia cum natus, iure odit ipsum consequatur dicta. Natus ab repellat ea.</p>
+            <p class="col-12 p9 p9M">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic labore dolorum laboriosam, modi fugiat molestias sint blanditiis voluptatem, natus velit voluptatibus totam officia? Iusto minima maxime itaque amet neque. Quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus distinctio odio reiciendis velit quas dignissimos commodi, neque omnis enim repudiandae iste ea eius rerum sapiente illum error dolor cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni, blanditiis, voluptatum necessitatibus ! </p>
+        </main>
+
+        <div class="col-12" style="height: 50px;"></div>
+        <!-- Mon CV -->
+        <main class="col-12 CV">
+            <!-- Gauche -->
+            <article class="col-5 gauche">
+                <!-- photo de CV -->
+                <div class="col-12 b imgCv">
+                    <img class="col-6" src="./imagesCV/utilisateur.png" alt="profil" aria-label="profil">
+                </div>
+                <!-- Profil -->
+                <div class="col-12 perso">
+                    <div class="col-12 perso1">
+                        <div class="col-12 titre">
+                            <p class="pInfoM">Profil</p>
+                        </div>
+                        <div class="col-12 profil">
+                            <p class="p pM" style="margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur eum aliquid porro, repudiandae minima? Aspernatur porro facere aperiam voluptatibus sed? Non facilis ab quaerat voluptatibus quis, fugiat neque repellat.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+                <!-- Informations personnelles -->
+                <article class="col-12 perso">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="pInfoM">Information personnelle</p>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-12 bloc blocM" aria-expanded="true">
+                            <div class="col-1 icon iconM" aria-expanded="true">
+                                <img src="./imagesCV/icons8-email-50.png" alt="Email" aria-label="Email">
+                            </div>
+                            <div class="col-11 info" aria-expanded="true">
+                                <p class="pM">kanounchanez66@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- Téléphone -->
+                        <div class="col-12 bloc blocM" aria-expanded="true">
+                            <div class="col-1 icon iconM" aria-expanded="true">
+                                <img src="./imagesCV/icons8-téléphone-50.png" alt="Téléphone" aria-label="Télephone">
+                            </div>
+                            <div class="col-11 info" aria-expanded="true">
+                                <p class="pM">(+33) 7 75 80 94 68</p>
+                            </div>
+                        </div>
+                        <!-- Adresse-->
+                        <div class="col-12 bloc blocM" aria-expanded="true">
+                            <div class="col-1 icon iconM" aria-expanded="true">
+                                <img src="./imagesCV/icons8-accueil-50.png" alt="Aadresse" aria-label="Adresse">
+                            </div>
+                            <div class="col-11 info" style="line-height: 1.2;" aria-expanded="true">
+                                <p class="pM">38, rue de Montjoly
+                                    <br>Charleville Mézières, 08000 </p>
+                            </div>
+                        </div>
+                        <!-- Github -->
+                        <div class="col-12 bloc blocM" aria-expanded="true">
+                            <div class="col-1 icon iconM" aria-expanded="true">
+                                <img src="./imagesCV/icons8-github-30.png" alt="github" aria-label="Github">
+                            </div>
+                            <div class="col-11 info" aria-expanded="true">
+                                <p class="pM">github.com/kchanez</p>
+                            </div>
+                        </div>
+                        <!-- Behance -->
+                        <div class="col-12 bloc blocM" aria-expanded="true">
+                            <div class="col-1 icon iconM">
+                                <img src="./imagesCV/icons8-behance-32.png" alt="behance" aria-label="behance">
+                            </div>
+                            <div class="col-11 info" aria-expanded="true">
+                                <p class="pM">behance.com/chanezkanoun</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- Compétences -->
+                <article class="col-12 perso persoM">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="pInfoM">Compétences</p>
+                        </div>
+                        <div class="col-12 profil" aria-expanded="true">
+                            <div class="col-12 skill" aria-expanded="true">
+                                <p class="col-2 p pMobile">Html</p>
+                                <hr class="col-9 hr1 hr2 hrM">
+                                <hr class="col-9 hr1">
+                            </div>
+                            <div class="col-12 skill" aria-expanded="true">
+                                <p class="col-2 p pMobile">Css</p>
+                                <hr class="col-9 hr1 hr2 hrM">
+                                <hr class="col-9 hr1">
+                            </div>
+                            <div class="col-12 skill" aria-expanded="true">
+                                <p class="col-2 p pMobile">Php</p>
+                                <hr class="col-9 hr1 hr2 hrM hr3">
+                                <hr class="col-9 hr1">
+                            </div>
+                            <div class="col-12 skill" aria-expanded="true">
+                                <p class="col-2 p pMobile">Js</p>
+                                <hr class="col-9 hr1 hr2 hrM">
+                                <hr class="col-9 hr1">
+                            </div>
+                            <div class="col-12 skill" aria-expanded="true">
+                                <p class="col-2 p pMobile">Cms</p>
+                                <hr class="col-9 hr1 hr2 hrM hr4">
+                                <hr class="col-9 hr1">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </article>
+                <hr>
+                <!-- Langues -->
+                <article class="col-12 perso">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="pInfoM">Langues</p>
+                        </div>
+                        <div class="col-12 profil centre centreM" aria-expanded="true"> 
+                            <p class="p">Anglais</p>
+                            <p class="p">Français</p>
+                            <p class="p">Arabe</p>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <!-- Centres d'interet -->
+                <article class="col-12 perso">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="pInfoM">Centres d'interet</p>
+                        </div>
+                        <div class="col-12 profil centre centreM" aria-expanded="true">
+                            <p class="p">Lecture</p>
+                            <p class="p">Dessin</p>
+                            <p class="p">Programation</p>
+                            <p class="p">Méditation</p>
+                        </div>
+                    </div>
+                </article>
+            </article>
+            <!-- Droit -->
+            <article class="col-7 droit gauche">
+                <div class="col-12 nom" aria-expanded="true">
+                    <p class="col-12 p pMobile">KANOUN CHANEZ</p>
+                </div>
+                <!-- Education -->
+                <div class="col-12 perso" aria-expanded="true">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="p1 pInfoM marg"> Education </p>
+                        </div>
+                        <div class="col-12 profil profilM" aria-expanded="true">
+                            <p class="p1"> 2023 - En cours</p>
+                            <p class="p1">Licence professionnelle Sciences, technologies, santé mention Métiers du numérique : conception, rédaction et réalisation Web parcours Intégration et Webdesign</p>
+                            <ul class="ul">
+                                <li>EISINE - Charleville-Mézières</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 perso" aria-expanded="true">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 profil profilM" aria-expanded="true">
+                            <p class="p1">2020-2023</p>
+                            <p class="p1">Licence Professionelle develloppement Web & Infographie</p>
+                            <ul class="ul">
+                                <li>Université de M’HMED BOUGARA - Boumerdes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <hr>
+                <!-- EXPERIENCE PROFESSIONNELLE -->
+                <div class="col-12 perso">
+                    <div class="col-12 perso1" aria-expanded="true">
+                        <div class="col-12 titre" aria-expanded="true">
+                            <p class="p1 pInfoM">Expérience professionnelle</p>
+                        </div>
+                        <!-- 1er Experience --> 
+                        <div class="col-12 profil profilM" aria-expanded="true">
+                            <p class="p1">Avril-Juin 2023</p>
+                            <p class="p1">Stagiaire développeuse web - C. com Events</p>
+                            <ul class="ul">
+                                <li class="li"> Rédaction du cahier des charges </li>
+                                <li class="li"> Développement d'une application E- posters permettant d’afficher les posters Établir une base de données SQL </li>
+                                <li class="li"> Collecte des données a partir du site</li>
+                                <li class="li"> Langage utilisé LARAVEL.</li>
+                            </ul>
+                        </div>
+                        <!-- 2eme Experience -->
+                        <div class="col-12 profil profilM" aria-expanded="true">
+                            <p class="p1">Avril-Juin 2023</p>
+                            <p class="p1">Stagiaire développeuse web - C. com Events</p>
+                            <ul class="ul">
+                                <li class="li"> Rédaction du cahier des charges </li>
+                                <li class="li"> Développement d'une application E- posters permettant d’afficher les posters Établir une base de données SQL </li>
+                                <li class="li"> Collecte des données a partir du site</li>
+                                <li class="li"> Langage utilisé LARAVEL.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <div class="col-12" style="height: 70px;"></div>
+        <!-- Footer Haut -->
+        <footer class="col-12 footer">
+            <article class="col-3 local" >
+                <p class="p6">LOCALISATION</p>
+                <p class="p7">3481 Melrose</p>
+                <p class="p7">Beverly Hills, CA 90210</p>
+            </article>
+            <article class="col-3 local" >
+                <p class="p6">ABOUT THE WEB</p>
+                <article class="col-12 reseau">
+                        <a rel="nofollow" href="#facebook" target="_blank" class="col-3 circle" aria-label="page facebook"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-facebook-f.svg" alt="Facebook" aria-label="facebook">
+                        </a>
+                        <a rel="nofollow" href="#google Plus" target="_blank" class="col-3 circle" aria-label="page GooglePlus"> 
+                            <img class="col-12" src="./ImagesFooter/googlePlus.svg" alt="GooglePlus" aria-label="Google">
+                        </a>
+                        <a rel="nofollow" href="#twitter" target="_blank" class="col-3 circle" aria-label="page twitter"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-twitter.svg" alt="Twitter" aria-label="Twitter">
+                        </a>
+                        <a rel="nofollow" href="#linkdin" target="_blank" class="col-3 circle" aria-label="page Linkdin">  
+                            <img class="col-12" src="./ImagesFooter/icons8-linkedin-2.svg" alt="Linkdin" aria-label="Linkdin">
+                        </a>
+                </article>
+            </article>
+            <article class="col-3 local" >
+                <p class="p6 pAbout">ABOUT FREELANCER</p>
+                <p class="p7">Freelancer is a free to use. open source</p>
+                <p class="p7">Bootstrap theme created by <span>Start Bootstrap</span></p>
+            </article>
+        </footer>
+
+        <!-- footer bas  -->
+        <footer class="col-12 SousFooter">
+            <p>Copyright &copy; All Rights Reserved Website 2023</p>
+        </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            var navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('nav');
+        }
+    </script>
+</body>
+</html>

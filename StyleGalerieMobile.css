@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) 
+{
+    .container > .body .Bg img
+    {
+        display: flex;
+    }
+    .container > .Services 
+    {
+        flex-direction: column;
+    }
+    .container > .Services .Bg .card
+    {
+        margin-bottom: 40px;
+    }
+    .container > .contactUs .p8
+    {
+        font-size: 2.5em;
+    }
+}

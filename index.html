@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kanoun chanez">
+    <link rel="icon" href="https://celebrated-pony-6bc4d9.netlify.app/" type="image/x-icon">
+    <meta name="description" content="Portfolio personnel site web" />
+    <meta name="keywords" content="projet, portfolio, developpement web, back end , front end, web, site personnel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://www.facebook.com/chanez.youn">
+    <meta property="og:type" content="website, Portfolio">
+    <meta property="og:title" content="Acceuil">
+    <meta property="og:description" content="Page d'acceuil de mon portflio">
+    <meta property="og:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@votresite">
+    <meta name="twitter:creator" content="@votreutilisateur">
+    <meta name="twitter:url" content="https://celebrated-pony-6bc4d9.netlify.app/">
+    <meta name="twitter:title" content="acceuil">
+    <meta name="twitter:description" content="Page d'acceuil de mon portflio">
+    <meta name="twitter:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="icon" href="./ImagesHeaders/go-3-logo-png-transparent.png" type="images/x-icon">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./StyleMobile.css">
+    <link rel="manifest" href="./manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then((registration) => {
+              console.log('Service Worker enregistré avec succès:', registration);
+            })
+            .catch((error) => {
+              console.error('Erreur d\'enregistrement du Service Worker:', error);
+            });
+        }
+      </script>
+    <title>Accueil</title>
+</head>
+<body>
+    <div class="container row" aria-expanded="true">
+        <!-- Header -->
+        <header class="col-12 header">
+            <!-- Logo -->
+            <a href="./index.html" class="col-1" aria-label="page index accueil">
+                <img src="./ImagesHeaders/go-3-logo-png-transparent.png" alt="logo" aria-label="Logo de Eisine">
+            </a>
+            <!-- Nav Barre -->
+            <a onclick="toggleMenu()" id="link">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </a>
+            <article  class="nav navigation  col-10 open" id="burger">
+                <ul class="menu">
+                    <li><a href="./index.html" aria-label="page index acceuil">Accueil</a></li>
+                    <li><a href="./Galerie.html" aria-label="page Galerie">Ma Galerie</a></li>
+                    <li><a href="./MonCV.html" aria-label="page MonCV">Mon CV</a></li>
+                    <li><a href="./Contact.html" aria-label="page Contact">Contact Us</a></li>
+                </ul>
+            </article>
+        </header>
+        <!-- Body -->
+        <main class="col-12 body">
+            <article class="col-4 left">
+                <p class="p1">Build your <span> Web Site</span> </p>
+                <p class="p2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla tempora atque eum, quae, nam vel voluptate nihil architecto? Quidem illo omnis itaque laudantium unde qui nostrum alias?</p>
+                <button class="col-12 btn" style="width: 100%;" aria-label="get started" >Get Started</button>
+            </article>
+            <article class="col-7 Bg">
+                <img src="./imagesBody/4554896.jpg" alt="image de l'arriere plan" aria-label="photo background illustration">
+                <!-- <img src="./imagesBody/20944999.jpg" alt="image de l'arriere plan"> -->
+            </article>
+        </main>
+
+        <div class="col-12 space" style="height: 150px;"></div>
+
+        <!-- About Us -->
+        <main class="col-12 body aboutUs">
+            <article class="col-6 Bg" style="justify-content: flex-start;">
+                <img src="./imagesBody/5118825.jpg" alt="image de l'arriere plan" style="width: 80%;" aria-label="image de l'arrière plan">
+            </article>
+            <article class="col-6 left">
+                <p class="p" style="color: #60e3a9;"> ABOUT US </p>
+                <!-- <h1>Why hire me for your next project </h1> -->
+                <p class="p4" style="line-height: 1.8;">Why hire me for your next project </p>
+                <p class="p2 p3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla <br> tempora atque eum, quae, nam vel voluptate nihil architecto? Quidem illo omnis itaque <br> laudantium unde qui nostrum alias?</p>
+                <p class="p2 p3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla <br> tempora atque eum, quae, nam vel voluptate nihil architecto?</p>
+                <a href="./Galerie.html" target="_blank" aria-label="lien vers la page galerie">
+                    <button class="col-12 btn" aria-label="Our services">Our Services</button>
+                </a>
+            </article>
+            
+        </main>
+
+        <div class="col-12 space" style="height: 150px;"></div>
+
+
+        <!-- Mon Galeries -->
+        <main class="col-12 body  Services">    
+            <p class=" col-12 p" style="color: #60e3a9;"> Nos Produits</p>    
+            <p class="col-12 p5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur obcaecati fugiat ipsum nobis error, hic voluptatem modi recusandae itaque pariatur cumque impedit blanditiis odit, corporis autem in. Et, veritatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem illo culpa nihil, laudantium reprehenderit quis dicta tenetur vero error repudiandae blanditiis sunt dolore voluptate eum voluptatum adipisci. Vero, accusantium commodi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, obcaecati. Quisquam delectus laudantium laborum optio doloremque mollitia libero blanditiis sed possimus quas cumque illum eum nemo, obcaecati quibusdam voluptatibus explicabo.</p>
+            <p class="col-12 p5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur obcaecati fugiat ipsum nobis error, hic voluptatem modi recusandae itaque pariatur cumque impedit blanditiis odit, corporis autem in. Et, veritatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem illo culpa nihil, </p>
+            <div class="col-12 Bg Products ProductsM">
+                <div class="col-3 card cardM">
+                <a href="#" class="link">
+                    <img class="imgM" src="./imagesBody/sight-sense-plants-collage-min.jpg" alt="Avatar1" aria-label="Avatar1">
+                    <div class="link1">
+                        <h4><b>Galerie 01</b></h4> 
+                        <p>Sight sense plants collage</p> 
+                    </div>
+                    </a>
+                </div>
+                <div class="col-3 card cardM">
+                    <a href="#" class="link">
+                        <img class="imgM" src="./imagesBody/touch-sense-heart-collage-min.jpg" alt="Avatar2" aria-label="Avatar2">
+                    <div class="link1">
+                        <h4><b>Galerie 02</b></h4> 
+                        <p>Touch sense heart collage </p> 
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-3 card cardM">
+                    <a href="#" class="link">
+                        <img class="imgM" src="./imagesBody/smelling-sense-lemons-collage-min.jpg" alt="Avatar3" aria-label="Avatar3">
+                        <div class="link1">
+                            <h4><b>Galerie 03</b></h4> 
+                            <p>Smelling sense lemons collage</p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <div class="col-12 space" style="height: 150px;"></div>
+        <!-- Mon CV -->
+        <main class="col-12 body aboutUs">
+            <article class="col-6 left">
+                <p class="p" style="color: #60e3a9;"> Mon CV </p>
+                <!-- <h1>Why hire me for your next project </h1> -->
+                <p class="p4">Why hire me for your next project </p>
+                <p class="p2 p3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla <br> tempora atque eum, quae, nam vel voluptate nihil architecto? Quidem illo omnis itaque <br> laudantium unde qui nostrum alias?</p>
+                <p class="p2 p3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla <br> tempora atque eum, quae, nam vel voluptate nihil architecto?</p>
+                <a href="./MonCV.html" target="_blank" aria-label="MonCV">
+                    <button class="col-12 btn" aria-label="Our services">Mon CV</button>
+                </a> 
+            </article>
+            <article class="col-6 Bg" style="justify-content: flex-end;">
+                <img src="./imagesBody/Resume-(1).jpg" alt="image de l'arriere plan" style="width: 80%;" aria-label="image arrière plan">
+            </article>
+        </main>
+
+        <div class="col-12 space" style="height: 100px;"></div>
+
+        <!-- Footer Haut -->
+        <footer class="col-12 footer">
+            <div class="col-3 local" >
+                <p class="p6">LOCALISATION</p>
+                <p class="p7">3481 Melrose</p>
+                <p class="p7">Beverly Hills, CA 90210</p>
+            </div>
+            <div class="col-3 local" >
+                <p class="p6">ABOUT THE WEB</p>
+                <div class="col-12 reseau">
+                        <a rel="nofollow" href="#facebook" target="_blank" class="col-3 circle" aria-label="page facebook"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-facebook-f.svg" alt="Facebook" aria-label="facebook">
+                        </a>
+                        <a rel="nofollow" href="#google Plus" target="_blank" class="col-3 circle" aria-label="page GooglePlus"> 
+                            <img class="col-12" src="./ImagesFooter/googlePlus.svg" alt="GooglePlus" aria-label="GooglePlus">
+                        </a>
+                        <a rel="nofollow" href="#twitter" target="_blank" class="col-3 circle" aria-label="page twitter"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-twitter.svg" alt="Twitter" aria-label="Twitter">
+                        </a>
+                        <a rel="nofollow" href="#linkdin" target="_blank" class="col-3 circle" aria-label="page Linkdin">  
+                            <img class="col-12" src="./ImagesFooter/icons8-linkedin-2.svg" alt="Linkdin" aria-label="Linkdin">
+                        </a>
+                </div>
+            </div>
+            <div class="col-3 local" >
+                <p class="p6 pAbout">ABOUT FREELANCER</p>
+                <p class="p7">Freelancer is a free to use. open source</p>
+                <p class="p7">Bootstrap theme created by <span>Start Bootstrap</span></p>
+            </div>
+        </footer>
+
+        <!-- footer bas  -->
+        <footer class="col-12 SousFooter">
+            <p>Copyright &copy; All Rights Reserved Website 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('nav');
+        }
+    </script>
+</body>
+</html>

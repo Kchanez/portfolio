@@ -1,0 +1,45 @@
+.container > .Services 
+{
+    flex-direction: row;
+}
+.container > .Services .Products
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .Services .Bg .card 
+{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.container > .circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .circle .dot 
+{
+    height: 25px;
+    width: 25px;
+    background-color: #d7f7e8 ;
+    background-color:  #1c2f35;
+    border: 0.5px solid #d7f7e8;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 5px;
+    box-shadow: 0 4px 8px 0 #bcc0c2, 0 6px 20px 0 #bcc0c2;
+}
+
+.container > .circle .dot1
+{
+    opacity: 0.8;
+}
+.container > .circle .dot:hover
+{   
+    opacity: 0.85;
+    color: #d7f7e8;
+}

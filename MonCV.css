@@ -1,0 +1,169 @@
+.container > .CV
+{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60%;
+    border-radius: 5px;
+   /*  height: 60em;
+    border: 0.1px solid #e1e3e4;
+    box-shadow: 0 4px 8px 0 #bcc0c2, 0 6px 20px 0 #bcc0c2; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container > .CV .gauche
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #d7f7e8;
+    padding: 20px;
+}
+.container > .CV .gauche hr
+{
+    width: 100%;
+    height: 0px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.container > .CV .droit hr
+{
+    color: #d7f7e8;
+    width: 100%;
+    height: 0px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.container > .CV .gauche .perso .perso1 .profil
+{
+    display: flex;
+    flex-direction: column;
+}
+.container > .CV .gauche .perso .perso1 .centre
+{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > .CV .gauche .perso .perso1 .profil .skill
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container > .CV .gauche .perso .perso1 .profil .hr1
+{
+    width: 60%;
+    display: inline-flex;
+    border: 5px solid;
+    border-radius: 10px;
+    margin-right: 0px;
+}
+.container > .CV .gauche .perso .perso1 .profil .hr2
+{
+    position: relative;
+    left: 106px;
+    color: #60e3a9;
+    width: 85%;
+}
+.container > .CV .gauche .perso .perso1 .profil .hr3
+{
+    left: 100px;
+    width: 60%;
+}
+.container > .CV .gauche .perso .perso1 .profil .hr4
+{
+    left: 97px;
+    width: 50%;
+}
+.container > .CV .gauche .img
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 25%; */
+}
+.container > .CV .gauche .img img
+{
+    width: 50%;
+    border-radius: 15%;
+    background-color: #1c2f35;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.container > .CV .gauche .perso .perso1 .profil .p
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.container > .CV .gauche .perso .perso1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .CV .gauche .perso .perso1 .bloc 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    line-height: 0.2;
+}
+.container > .CV .gauche .perso .perso1 .bloc .icon
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+.container > .CV .gauche .perso .perso1 .titre p 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px 0px;
+}
+.container > .CV .gauche .perso .perso1 .bloc .icon img 
+{
+    width: 50%;
+}
+.container > .CV .droit
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2f35;
+    color: #d7f7e8;
+}
+
+.container > .CV .droit .nom .p
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #d7f7e8;
+    font-size: 4.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0em;
+    margin-bottom: 10px;
+}
+.container > .CV .gauche .perso .perso1 .profil .p1 , .titre .p1
+{
+    color: #d7f7e8;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+}
+.container > .CV .gauche .perso .perso1 .profil ul
+{
+    list-style-type: none;
+}
+.container > .CV .gauche .perso .perso1 .profil ul .li
+{
+   line-height: 2;
+}
+

@@ -1,0 +1,368 @@
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+}
+
+body
+{
+    color: #1c2f35;
+}
+
+/* ------------------------------- */
+.container
+{
+    /* background-color: aqua;  */
+    margin: 0px auto; 
+    width: 95%; 
+}
+
+/* Header */
+.container >  .header , .body, .aboutUs 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* logo */
+.container >  .header  a img
+{
+  width: 100%;
+  filter: saturate(8);
+}
+/* nav */
+.container >  .header  .nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container >  .header  .nav ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container >  .header  .nav ul li a 
+{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-size: 20px;
+    color: #1c2f35;
+}
+/* .container >  .header  .nav ul li a:hover
+{
+  box-shadow: 0 16px 16px 0   #d7f7e8, 0px 8px 8px 0   #d7f7e8;
+} */
+/* Body */
+.container >  .body , .aboutUs
+{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    justify-content: space-between;
+    
+}
+/* Left */
+.container >  .body .left
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+}
+/* paragraphe */
+.container >  .body .left p , .p1
+{
+    text-align: left;
+    margin: 0px;
+    font-size: 1.2em;
+    line-height: 2.3;
+}
+.container > .body .left .p1 
+{
+    font-size: 5.1em;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.container > .body .left span 
+{
+    display: inline-flex;
+    font-size:1.2em;
+}
+/* button */
+.container >  .body .left .btn
+{
+  width: 86%;
+  background-color: #60e3a9;
+  border: none;
+  color: #1c2f35;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 24px 2px 4px;
+  cursor: pointer;
+  line-height: 2;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 #bcc0c2, 0 6px 20px 0 #bcc0c2;
+}
+.container >  .body .left .btn:hover
+{
+    opacity: 0.85;
+    color: #d7f7e8;
+}
+/* Right */
+.container > .body .Bg 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .body .Bg img
+{
+    width: 100%;
+}
+/* About Us */
+.container >  .aboutUs
+{
+    margin-top: 50px;
+}
+
+.container > .body .left .p3
+{
+  margin-bottom: 30px;
+}
+.container > .body .left .p4
+{
+  font-size: 3em;
+  font-weight: bold;
+}
+.container > .body .left .p
+{
+    font-weight: 500;
+    color: #60e3a9;
+    font-size: 2em;
+}
+
+
+
+/* Our services */
+.container > .Services
+{
+  display: flex;
+  flex-direction: column;
+}
+.container > .Services .Products
+{
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.container > .Services .Bg  .card 
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.container > .Services .Bg  .card:hover {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
+}
+.container > .Services .Bg  .card .link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1c2f35;
+    text-align: center;
+}
+.container > .Services .Bg  .card .link img
+{
+  width:80%; 
+  margin: 20px 0px;
+  border-radius: 15px; 
+}
+.container > .Services .Bg  .card .link1 h4
+{
+margin: 0px;
+}
+.container > .Services .p
+{
+    font-weight: 500;
+    color: #60e3a9;
+    font-size: 2em;
+}
+.container > .Services .p5
+{
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* footer haut */
+.container > .footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c2f35;
+  height: 400px;
+	width:100%;
+}
+.container > .footer .local 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;  
+}
+.container > .footer .local .p6
+{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 4;
+    margin: 0px;
+}
+.container > .footer .local .pAbout
+{
+  font-size: 1.8em;
+}
+.container > .footer .local .p7
+{
+    font-size: 1.2em;
+    line-height: 0;
+}
+.container > .footer .local p span 
+{
+  color: #60e3a9;
+}
+
+.container > .footer .local .reseau 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+}
+.container > .footer .local .reseau .circle
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container > .footer .local .reseau .circle:hover
+{
+    opacity: 0.75;
+}
+.container > .footer .local .reseau .circle  img
+{
+  width: 77%;
+  /* background: white; */
+  border-radius: 5px; 
+  box-shadow: 0 0px 3px 0   #d7f7e8, 0 0px 1px 0   #d7f7e8;
+}
+
+/* footer bas */
+.container > footer 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #17272c;
+  /* background-color: #121f23; */
+  border-top: 1px solid #d7f7e8;
+  color: white;
+}

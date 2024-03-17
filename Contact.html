@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kanoun chanez">
+    <link rel="icon" href="https://celebrated-pony-6bc4d9.netlify.app/" type="image/x-icon">
+    <meta name="description" content="Portfolio personnel site web" />
+    <meta name="keywords" content="projet, portfolio, developpement web, back end , front end, web, site personnel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://www.facebook.com/chanez.youn">
+    <meta property="og:type" content="website, Portfolio">
+    <meta property="og:title" content="Acceuil">
+    <meta property="og:description" content="Page d'acceuil de mon portflio">
+    <meta property="og:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@votresite">
+    <meta name="twitter:creator" content="@votreutilisateur">
+    <meta name="twitter:url" content="https://celebrated-pony-6bc4d9.netlify.app/">
+    <meta name="twitter:title" content="acceuil">
+    <meta name="twitter:description" content="Page d'acceuil de mon portflio">
+    <meta name="twitter:image" content="./ImagesHeaders/go-3-logo-png-transparent.jpg">
+    <meta name="icon" href="./ImagesHeaders/go-3-logo-png-transparent.png" type="images/x-icon">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./StyleMobile.css">
+    <link rel="stylesheet" href="./StyleContact.css">
+    <link rel="stylesheet" href="./StyleContactMobile.css">
+    <link rel="manifest" href="./manifest.json">
+    <title> Contact Us </title>
+</head>
+<body>
+    <div class="container row" aria-expanded="true">
+        <!-- Header -->
+        <header class="col-12 header">
+            <!-- Logo -->
+            <a href="./index.html" class="col-1" aria-label="page index acceuil">
+                <img src="./ImagesHeaders/go-3-logo-png-transparent.png" alt="logo">
+            </a>
+            <!-- Nav Barre -->
+            <a onclick="toggleMenu()" id="link" aria-expanded="true">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </a>
+            <article class="nav col-10 open navigation" id="burger" aria-expanded="true">
+                <ul class="menu">
+                    <li><a href="./index.html" aria-label="page index acceuil">Accueil</a></li>
+                    <li><a href="./Galerie.html" aria-label="page Galerie">Ma Galerie</a></li>
+                    <li><a href="./MonCV.html" aria-label="page MonCV">Mon CV</a></li>
+                    <li><a href="./Contact.html" aria-label="page Contact us">Contact Us</a></li>
+                </ul>
+            </article>
+        </header>
+
+        <div class="col-12" style="height: 50px;"></div>
+
+        <main class="col-12 contactUs">
+            <p class="col-12 p8">Contactez-nous</p>
+            <p class="col-12 p9">Nous sommes là pour à tout besoins commercial et pour promouvoir votre entreprise en ligne  !</p>
+            <p class="col-12 p9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic labore dolorum laboriosam, modi fugiat molestias sint blanditiis voluptatem, natus velit voluptatibus totam officia? Iusto minima maxime itaque amet neque. Quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus distinctio odio reiciendis velit quas dignissimos commodi, neque omnis enim repudiandae iste ea eius rerum sapiente illum error dolor cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni, blanditiis, voluptatum necessitatibus, voluptatibus sapiente culpa ea quasi minima facilis commodi explicabo! Sit, minus explicabo quas numquam iure soluta. Voluptatum.</p>
+        </main>
+
+        <div class="col-12" style="height: 50px;"></div>
+        <!-- Body -->
+        <main class="col-12 body contact">
+            <article class="col-6 Bg">
+                <img src="./imagesContact/5193701.jpg" alt="image de Contact Us" aria-label="LOGO EISINE">
+                <!-- <img src="./imagesBody/20944999.jpg" alt="image de l'arriere plan"> -->
+            </article>
+            <article class="col-6 left">
+                <p class="p1">Formulaire de Contact </p>
+                <!-- <p class="p2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ducimus voluptates nulla tempora atque eum, quae, nam vel voluptate nihil architecto? Quidem illo omnis itaque laudantium unde qui nostrum alias?</p> -->
+                <form action="./FormulaireContact/Contact.php" method="post" class="col-11 form">
+                    <div class="col-12 infoPerso" aria-live="assertive" aria-expanded="true">
+                        <div class="col-5" aria-expanded="true">
+                            <label aria-labelledby="Nom" for="Nom">Nom</label>
+                            <input  type="text" name="nom" placeholder="Entrez voter nom" aria-labelledby="Nom" required>
+                        </div>
+                        <div class="col-5" aria-live="assertive" aria-expanded="true">
+                            <label aria-labelledby="Prenom" for="Prenom">Prenom</label>
+                            <input  type="text" name="prenom" placeholder="Entrez voter prenom" aria-labelledby="Prenom" required>
+                        </div>
+                    </div>
+                    <div class="col-12 sujet" aria-live="assertive" aria-expanded="true">
+                        <label aria-labelledby="Email" for="Email">Email</label>
+                        <input type="text" name="email" placeholder="Entrez votre email" aria-labelledby="Email" required>
+                    </div>
+                    <div class="col-12 sujet" aria-live="assertive" aria-expanded="true">
+                        <label aria-labelledby="Sujet" for="Sujet">Sujet</label>
+                        <input type="text" name="sujet" placeholder="Entrez le sujet de votre contact" aria-labelledby="Sujet" required>
+                    </div>
+                    <div class="col-12 sujet" aria-live="assertive" aria-expanded="true">
+                        <label aria-labelledby="Message" for="Message">Message</label>
+                        <textarea class="message" name="message" id="message" cols="87%" rows="10" placeholder="Laisser un message" aria-labelledby="Message"></textarea>
+                    </div>
+                    <div class="col-12 sujet" aria-live="assertive" aria-expanded="true">
+                        <input type="submit" class="soumettre" name="ajout">
+                    </div>
+                </form>
+                <!-- <button class="col-12 btn"></button> -->
+            </article>
+        </main>
+
+        <div class="col-12" style="height: 100px;"></div>
+
+        <!-- Footer Haut -->
+        <footer class="col-12 footer">
+            <article class="col-3 local" >
+                <p class="p6">LOCALISATION</p>
+                <p class="p7">3481 Melrose</p>
+                <p class="p7">Beverly Hills, CA 90210</p>
+            </article>
+            <article class="col-3 local" >
+                <p class="p6">ABOUT THE WEB</p>
+                <div class="col-12 reseau" aria-expanded="true">
+                        <a rel="nofollow" href="#facebook" target="_blank" class="col-3 circle" aria-label="page facebook"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-facebook-f.svg" alt="Facebook" aria-label="Facebook">
+                        </a>
+                        <a rel="nofollow" href="#google Plus" target="_blank" class="col-3 circle" aria-label="page googlePlus">  
+                            <img class="col-12" src="./ImagesFooter/googlePlus.svg" alt="GooglePlus" aria-label="GooglePlus">
+                        </a>
+                        <a rel="nofollow" href="#twitter" target="_blank" class="col-3 circle" aria-label="page twitter"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-twitter.svg" alt="Twitter" aria-label="Twitter">
+                        </a>
+                        <a rel="nofollow" href="#linkdin" target="_blank" class="col-3 circle" aria-label="page Linkdin"> 
+                            <img class="col-12" src="./ImagesFooter/icons8-linkedin-2.svg" alt="Linkdin" aria-label="Linkdin">
+                        </a>
+                </div>
+            </article>
+            <article class="col-3 local" >
+                <p class="p6 pAbout">ABOUT FREELANCER</p>
+                <p class="p7">Freelancer is a free to use. open source</p>
+                <p class="p7">Bootstrap theme created by <span>Start Bootstrap</span></p>
+            </article>
+        </footer>
+
+        <!-- footer bas  -->
+        <footer class="col-12 SousFooter">
+            <p>Copyright &copy; All Rights Reserved Website 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('nav');
+        }
+    </script>
+</body>
+</html>
