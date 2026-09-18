@@ -1,11 +1,11 @@
 const translations = {
   fr: {
-    role: "Web · Direction artistique",
+    role: "Web Developer · Web Designer",
     navProjects: "Projets",
     navExpertise: "Expertise",
     navAbout: "À propos",
     navContact: "Contact",
-    eyebrow: "Portfolio · Web & direction artistique",
+    eyebrow: "Portfolio · Développeuse Web · Conceptrice Web",
     heroTitle: "Des expériences digitales, des images qui restent.",
     heroText:
       "Je conçois des sites, des identités et des supports visuels qui donnent aux projets une présence cohérente et mémorable.",
@@ -35,6 +35,9 @@ const translations = {
     serviceFour: "UI / UX",
     serviceFourText:
       "Conception de structures et interfaces qui mettent le contenu en valeur.",
+    serviceFive: "SEO & GEO",
+    serviceFiveText:
+      "Optimisation du référencement naturel et de la visibilité dans les moteurs de recherche et les réponses IA.",
     webProjects: "Projets web",
     designProjects: "Direction artistique & design",
     allProjects: "Tout",
@@ -72,7 +75,7 @@ const translations = {
     navExpertise: "Expertise",
     navAbout: "About",
     navContact: "Contact",
-    eyebrow: "Portfolio · Web & art direction",
+    eyebrow: "Portfolio · Web Developer · Web Designer",
     heroTitle: "Digital experiences, images that stay.",
     heroText:
       "I design websites, identities and visual assets that give projects a coherent and memorable presence.",
@@ -106,6 +109,9 @@ const translations = {
     serviceFour: "UI / UX",
     serviceFourText:
       "Structures and interfaces that bring the content into focus.",
+    serviceFive: "SEO & GEO",
+    serviceFiveText:
+      "Improving organic visibility across search engines and AI-generated answers.",
     processLabel: "Process",
     processTitle: "From idea to digital experience.",
     stepDiscover: "Discover",
@@ -132,12 +138,12 @@ const translations = {
     viewLabel: "View project →",
   },
   ar: {
-    role: "تطوير الويب · التوجيه الفني",
+    role: "مطورة ويب · مصممة ويب",
     navProjects: "المشاريع",
     navExpertise: "الخبرات",
     navAbout: "من أنا",
     navContact: "تواصل",
-    eyebrow: "ملف أعمال · الويب والتوجيه الفني",
+    eyebrow: "ملف أعمال · مطورة ويب · مصممة ويب",
     heroTitle: "تجارب رقمية وصور تبقى في الذاكرة.",
     heroText:
       "أصمم المواقع والهويات والمواد البصرية لمنح كل مشروع حضوراً متناسقاً ومميزاً.",
@@ -167,6 +173,9 @@ const translations = {
     serviceThreeText: "تحسين المواقع القائمة وتطوير هويتها وتجربتها.",
     serviceFour: "UI / UX",
     serviceFourText: "هياكل وواجهات تضع المحتوى في الواجهة.",
+    serviceFive: "SEO وGEO",
+    serviceFiveText:
+      "تحسين الظهور الطبيعي في محركات البحث وإجابات الذكاء الاصطناعي.",
     processLabel: "مراحل العمل",
     processTitle: "من الفكرة إلى التجربة الرقمية.",
     stepDiscover: "اكتشاف",
@@ -207,12 +216,12 @@ const projects = [
       ar: "لقطة من موقع SOS Jardin 08",
     },
     cat: {
-      fr: "Stage webdesign · Site vitrine WordPress",
+      fr: "Webdesign · Site vitrine WordPress",
       en: "Showcase site · WordPress",
       ar: "موقع تعريفي · WordPress",
     },
     desc: {
-      fr: "Stage de webdesign : conception et développement d’un site vitrine WordPress pour un paysagiste, avec interface responsive, contenus multimédias, amélioration de l’ergonomie et référencement SEO.",
+      fr: "Conception et développement d’un site vitrine WordPress pour un paysagiste, avec interface responsive, contenus multimédias et optimisation SEO.",
       en: "Visual direction, responsive integration and WordPress development for a landscaper showcase website.",
       ar: "تصميم التوجه البصري ودمج متجاوب وتطوير WordPress لموقع تنسيق الحدائق.",
     },
@@ -232,12 +241,12 @@ const projects = [
       ar: "لقطة من موقع PXO Tech",
     },
     cat: {
-      fr: "Stage webmaster · Site corporate",
+      fr: "Webmaster · Site corporate",
       en: "Corporate website · WordPress",
       ar: "موقع شركة · WordPress",
     },
     desc: {
-      fr: "Stage de webmaster : contribution à la refonte et au développement du site, conception d’interfaces responsive, amélioration de l’UX/UI, intégration de contenus multimédias et optimisation SEO.",
+      fr: "Refonte et développement d’un site corporate, avec interfaces responsive, amélioration UX/UI, contenus multimédias et optimisation SEO.",
       en: "Interface design, service structure and integration for a corporate IT services website.",
       ar: "تصميم الواجهة وتنظيم الخدمات ودمج موقع شركة للخدمات المعلوماتية.",
     },
@@ -257,14 +266,64 @@ const projects = [
       ar: "لقطة من موقعي Renovtaloc Travaux وÉtudes",
     },
     cat: {
-      fr: "Stages développement web & SEO",
+      fr: "Développement web · SEO & GEO",
       en: "Web redesign · SEO",
       ar: "إعادة تصميم · SEO",
     },
     desc: {
-      fr: "Deux expériences de développeuse web & SEO : refonte et optimisation des sites, amélioration du design et des parcours, contenus SEO, suivi avec Google Analytics, Search Console et Semrush, développement d’un simulateur d’économie d’énergie en HTML, CSS et JavaScript, puis maintenance et évolution continue des projets.",
+      fr: "Refonte et optimisation des sites, stratégie SEO/GEO, campagnes SEA, intégration de solutions IA, suivi avec Google Search Console, Google Analytics et Semrush, et création d’articles pour le blog. Maintenance et évolution continue des projets.",
       en: "Homepage redesign, content hierarchy, split-screen hero, calls to action and SEO optimisation.",
       ar: "إعادة تصميم الصفحة الرئيسية وتنظيم المحتوى وواجهة مقسمة وأزرار الدعوة وتحسين SEO.",
+    },
+  },
+  {
+    id: "renovtaloc-energy-simulator",
+    kind: "web",
+    title: "Simulateur d’économies d’énergie",
+    year: "Novembre 2025 — Mai 2026",
+    sortDate: "2026-05",
+    url: "https://www.renovtaloc-etudesenergie.fr/simulateur-deconomie-denergie/",
+    mark: "RENOV<br>TALOC",
+    image: "./Web/Simulateur%20d%27%C3%A9conomie.png",
+    alt: {
+      fr: "Capture du simulateur d’économies d’énergie Renovtaloc Études Énergie",
+      en: "Renovtaloc energy savings simulator screenshot",
+      ar: "لقطة من محاكي توفير الطاقة Renovtaloc",
+    },
+    cat: {
+      fr: "Outil web · HTML · CSS · JavaScript",
+      en: "Web tool · HTML · CSS · JavaScript",
+      ar: "أداة ويب · HTML · CSS · JavaScript",
+    },
+    desc: {
+      fr: "Développement d’un simulateur d’économies d’énergie en HTML, CSS et JavaScript, puis intégration dans WordPress pour Renovtaloc Études Énergie.",
+      en: "Developed an energy savings simulator with HTML, CSS and JavaScript, then integrated it into WordPress for Renovtaloc Études Énergie.",
+      ar: "تطوير محاكي لتوفير الطاقة باستخدام HTML وCSS وJavaScript ثم دمجه في WordPress.",
+    },
+  },
+  {
+    id: "renovtaloc-cost-simulator",
+    kind: "web",
+    title: "Simulateur de coût des travaux",
+    year: "Novembre 2025 — Mai 2026",
+    sortDate: "2026-05",
+    url: "https://renovtaloc.fr/formulaire-estimation-instantanee/",
+    mark: "RENOV<br>TALOC",
+    image: "./Web/Simulateur%20de%20Cout.png",
+    alt: {
+      fr: "Capture du simulateur de coût des travaux Renovtaloc",
+      en: "Renovtaloc works cost simulator screenshot",
+      ar: "لقطة من محاكي تكلفة الأشغال Renovtaloc",
+    },
+    cat: {
+      fr: "Outil web · HTML · CSS · JavaScript",
+      en: "Web tool · HTML · CSS · JavaScript",
+      ar: "أداة ويب · HTML · CSS · JavaScript",
+    },
+    desc: {
+      fr: "Création d’un simulateur de coût des travaux en HTML, CSS et JavaScript, intégré dans WordPress pour faciliter l’estimation instantanée des projets.",
+      en: "Created a works cost simulator with HTML, CSS and JavaScript, integrated into WordPress for instant project estimates.",
+      ar: "إنشاء محاكي لتكلفة الأشغال باستخدام HTML وCSS وJavaScript ودمجه في WordPress.",
     },
   },
   {
