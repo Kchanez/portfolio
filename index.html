@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio de Chanez Kanoun — développement web et direction artistique."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Chanez Kanoun — Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#top"
+        >Chanez Kanoun<small data-t="role">Web · Direction artistique</small></a
+      >
+      <nav>
+        <a href="#projects" data-t="navProjects">Projets</a
+        ><a href="#expertise" data-t="navExpertise">Expertise</a
+        ><a href="#about" data-t="navAbout">À propos</a
+        ><a href="#contact" data-t="navContact">Contact</a
+        ><span class="languages"
+          ><button data-lang="fr" class="active">FR</button
+          ><button data-lang="en">EN</button
+          ><button data-lang="ar">AR</button></span
+        >
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero wrap">
+        <p class="eyebrow" data-t="eyebrow">
+          Portfolio ·Developer · Web Designer
+        </p>
+        <h1 data-t="heroTitle">
+          Des expériences digitales,<br /><em>des images qui restent.</em>
+        </h1>
+        <p class="hero-copy" data-t="heroText">
+          Je conçois des sites, des identités et des supports visuels qui
+          donnent aux projets une présence cohérente et mémorable.
+        </p>
+        <a class="arrow-link" href="#projects" data-t="discover"
+          >Découvrir les projets ↓</a
+        >
+      </section>
+      <section class="expertise wrap" id="expertise">
+        <p class="eyebrow">
+          03 — <span data-t="expertiseLabel">Expertise</span>
+        </p>
+        <h2 data-t="expertiseTitle">Ce que je fais</h2>
+        <div class="service-list">
+          <article>
+            <b>01</b>
+            <div>
+              <h3 data-t="serviceOne">Web design</h3>
+              <p data-t="serviceOneText">
+                Création d'interfaces modernes, élégantes et pensées pour une
+                expérience claire.
+              </p>
+            </div>
+          </article>
+          <article>
+            <b>02</b>
+            <div>
+              <h3 data-t="serviceTwo">WordPress development</h3>
+              <p data-t="serviceTwoText">
+                Création et intégration de sites WordPress personnalisés et
+                performants.
+              </p>
+            </div>
+          </article>
+          <article>
+            <b>03</b>
+            <div>
+              <h3 data-t="serviceThree">Redesign</h3>
+              <p data-t="serviceThreeText">
+                Refonte de sites existants pour améliorer leur identité et leur
+                expérience.
+              </p>
+            </div>
+          </article>
+          <article>
+            <b>04</b>
+            <div>
+              <h3 data-t="serviceFour">UI / UX</h3>
+              <p data-t="serviceFourText">
+                Conception de structures et interfaces qui mettent le contenu en
+                valeur.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="process">
+        <div class="wrap">
+          <p class="eyebrow">04 — <span data-t="processLabel">Process</span></p>
+          <div class="process-grid">
+            <h2 data-t="processTitle">De l'idée à l'expérience digitale.</h2>
+            <div class="steps">
+              <article>
+                <b>01 — <span data-t="stepDiscover">Découvrir</span></b>
+                <p data-t="stepDiscoverText">
+                  Comprendre le projet, ses objectifs et l'identité de la
+                  marque.
+                </p>
+              </article>
+              <article>
+                <b>02 — <span data-t="stepDesign">Designer</span></b>
+                <p data-t="stepDesignText">
+                  Créer une direction visuelle cohérente et une interface
+                  adaptée.
+                </p>
+              </article>
+              <article>
+                <b>03 — <span data-t="stepBuild">Construire</span></b>
+                <p data-t="stepBuildText">
+                  Transformer le design en expérience web fonctionnelle avec
+                  WordPress.
+                </p>
+              </article>
+              <article>
+                <b>04 — <span data-t="stepRefine">Affiner</span></b>
+                <p data-t="stepRefineText">
+                  Optimiser les détails, les interactions et la présentation
+                  finale.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects wrap" id="projects">
+        <div class="section-intro">
+          <p class="eyebrow">
+            01 — <span data-t="selected">Projets sélectionnés</span>
+          </p>
+          <h2 data-t="projectsTitle">
+            Deux regards,<br /><em>une même exigence.</em>
+          </h2>
+          <p data-t="projectsIntro">
+            Les projets sont classés selon leur contenu : une expérience
+            digitale à utiliser, ou une direction visuelle à ressentir.
+          </p>
+        </div>
+        <div
+          class="project-choice"
+          role="tablist"
+          aria-label="Choisir une catégorie de projets"
+        >
+          <button
+            class="project-choice-item"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-project-choice="web"
+            data-t="webProjects"
+          >
+            Projets web
+          </button>
+          <button
+            class="project-choice-item"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-project-choice="design"
+            data-t="designProjects"
+          >
+            <span>02</span
+            ><strong data-t="designProjects"
+              >Direction artistique & design</strong
+            ><i>↗</i>
+          </button>
+        </div>
+        <div class="project-group active" data-project-panel="web">
+          <div class="project-grid" data-projects-web></div>
+        </div>
+        <div class="project-group" data-project-panel="design">
+          <div class="project-grid" data-projects-design></div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="wrap about-inner">
+          <p class="eyebrow">02 — <span data-t="aboutLabel">À propos</span></p>
+          <div>
+            <h2 data-t="aboutTitle">
+              Du design visible.<br /><em>Une structure solide.</em>
+            </h2>
+            <p data-t="aboutText">
+              Mon profil réunit développement WordPress, UX/UI, SEO et
+              sensibilité visuelle. Je peux ainsi penser l'ensemble d'un projet,
+              de son image à son expérience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills wrap">
+        <p class="eyebrow">
+          05 — <span data-t="skillsLabel">Compétences</span>
+        </p>
+        <div class="skills-grid">
+          <div>
+            <h3 data-t="development">Développement</h3>
+            <p>
+              WordPress<br />HTML · CSS · JavaScript<br />PHP · Laravel · Vue.js
+            </p>
+          </div>
+          <div>
+            <h3 data-t="designLabel">Design</h3>
+            <p>UI Design<br />Responsive Design<br />UX · Visual Design</p>
+          </div>
+          <div>
+            <h3 data-t="tools">Outils</h3>
+            <p>
+              Figma · Elementor<br />Photoshop · Illustrator<br />GitHub · VS
+              Code
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact wrap" id="contact">
+        <p class="eyebrow">03 — <span data-t="contactLabel">Contact</span></p>
+        <h2 data-t="contactTitle">
+          Construisons une présence<br /><em>qui a du sens.</em>
+        </h2>
+        <p class="contact-intro" data-t="contactIntro">
+          Vous avez un projet en tête ? Parlons-en.
+        </p>
+        <a class="contact-link" href="mailto:kanounchanez66@gmail.com"
+          ><span data-t="startConversation">Démarrer une conversation</span>
+          <span>↗</span></a
+        >
+        <div class="contact-details">
+          <a href="mailto:kanounchanez66@gmail.com">kanounchanez66@gmail.com</a
+          ><a href="https://wa.me/213541546131" target="_blank" rel="noreferrer"
+            >WhatsApp</a
+          ><a
+            href="https://linkedin.com/in/chanez-kanoun-1b97ba28b"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Chanez Kanoun</span
+      ><span data-t="credit"
+        >WebDeveloper · Web Designer</span
+      >
+    </footer>
+    <dialog class="project-dialog" data-dialog>
+      <button class="close" data-close aria-label="Fermer">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-preview" data-dialog-preview></div>
+        <div class="dialog-copy">
+          <p class="dialog-index" data-dialog-index></p>
+          <p class="eyebrow" data-dialog-category></p>
+          <h2 data-dialog-title></h2>
+          <p data-dialog-description></p>
+          <a
+            class="dialog-link"
+            data-dialog-link
+            target="_blank"
+            rel="noreferrer"
+            ><span data-t="dialogVisit">Voir le site</span> ↗</a
+          >
+        </div>
+      </div>
+    </dialog>
+    <script src="./script.js"></script>
+  </body>
+</html>
